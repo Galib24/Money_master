@@ -1,5 +1,5 @@
 
-// second part
+// calculate button
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const foodField = document.getElementById('food-field');
     const foodFieldElement = foodField.value;
@@ -26,6 +26,7 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     foodField.value = "";
     RentField.value = "";
     ClothField.value = "";
+    
 
     // first part
 
@@ -41,10 +42,43 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     // so total remain balance after expense
     const Balance = totalIncomeNumber - TotalExpenseSum;
     balance.innerText = Balance;
+    // Income.value = "";
 
 
-    
+        // save button 
+        document.getElementById('btn-save').addEventListener('click', function(){
+            const saveInputField = document.getElementById('btn-save-field');
+            const saveInputString = saveInputField.value;
+            const saveInputFieldNo = parseFloat(saveInputString);
+        
+            
+        
+            const saveAmount = document.getElementById('save-amount');
+            const saveAmountString = saveAmount.innerText;
+            const saveAmountNo = parseFloat(saveAmountString);
+        
+            const percent =  (  saveInputFieldNo / 100 ) * totalIncomeNumber ; 
+            saveAmount.innerText = percent;
+        
+            
+        
+        })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })
+
+
+
 

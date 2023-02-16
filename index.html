@@ -32,21 +32,21 @@
                 <h1 class="font-semibold text-2xl text-center mb-5">INCOME</h1>
                 <div class="flex gap-3">
                     <h1 id="" class="font-normal">Income:</h1>
-                    <input id="income" type="text" placeholder="$ Count">
+                    <input id="income" type="text" placeholder="$ Count" required>
                 </div>
                 <h1 class="font-semibold text-2xl text-center mt-2 mb-5">Expenses</h1>
 
                 <div class="flex gap-3">
                     <h1  class="font-normal mt-2">Food:</h1>
-                    <input id="food-field" class="mt-2 mb-2 ml-5" type="text" placeholder="$ Count">
+                    <input id="food-field" class="mt-2 mb-2 ml-5" type="text" placeholder="$ Count" required>
                 </div>
                 <div class="flex gap-3">
                     <h1 class="font-normal mt-2">Rent:</h1>
-                    <input id="rent-field" class="mt-2 mb-2 ml-5" type="text" placeholder="$ Count">
+                    <input id="rent-field" class="mt-2 mb-2 ml-5" type="text" placeholder="$ Count" required>
                 </div>
                 <div class="flex flex-row gap-3">
                     <h1 class="font-normal mt-2">Clothes:</h1>
-                    <input id="cloth-field" class="mt-2 mb-2" type="text" placeholder="$ Count">
+                    <input id="cloth-field" class="mt-2 mb-2" type="text" placeholder="$ Count" required>
                 </div>
 
                 <button id="btn-calculate"
@@ -59,16 +59,16 @@
                         <h1>Save:</h1>
                     </div>
                     <div>
-                        <input class="w-16" type="number">
+                        <input id="btn-save-field" class="w-16" type="number"required>
                     </div>
                     <div>
                         <h1>%</h1>
                     </div>
                     <div>
-                        <button class="bg-blue-300 px-4 hover:bg-blue-500 rounded">Save</button>
+                        <button id="btn-save" class="bg-blue-300 px-4 hover:bg-blue-500 rounded">Save</button>
                     </div>
                 </div>
-                <h1 class="text-center">Saving Amount: <span>2000 </span></h1>
+                <h1 class="text-center">Saving Amount: <span id="save-amount">00 </span></h1>
                 <h1 class="text-center">Remaining Balance: <span>2500 </span></h1>
             </div>
         </section>
