@@ -59,6 +59,16 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
         
             const percent =  (  saveInputFieldNo / 100 ) * totalIncomeNumber ; 
             saveAmount.innerText = percent;
+
+
+            // 
+            const RemainBalance = document.getElementById('remain-balance');
+            const RemainBalanceString = RemainBalance.innerText;
+            const RemainBalanceNumber = parseFloat(RemainBalanceString);
+
+            // 
+            const finalRemainBalance = Balance - percent;
+            RemainBalance.innerText = finalRemainBalance;
         
             
         
